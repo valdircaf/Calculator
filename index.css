@@ -1,0 +1,195 @@
+/* root configurate */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* animations */
+
+@keyframes showMain {
+  from{
+    left: 40%;
+    top: 70%;
+    opacity: 0;
+  }
+  to{
+    left: 50%;
+    top: 50%;
+    opacity: 1;
+  }
+}
+
+@keyframes rotate {
+  10%{
+    transform: rotate(10deg);
+  }
+  50%{
+    transform: rotate(-10deg);
+  }
+  80%{
+    transform: rotate(10deg);
+  }
+  100%{
+    transform: rotate(-10deg);
+
+  }
+}
+
+/* main configurations */
+
+body{
+  background-image: url('Images/background.jpg');
+  background-size: 100% 100vh;
+  background-position: bottom center;
+}
+
+.main{
+  background-color: #1e1e1e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
+  height: 32em;
+  width: 24.5em;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: showMain .5s;
+}
+
+/* hide class */
+
+.hide{
+  display: none;
+}
+
+/* buttons "close" and "minimizate" */
+
+.interaction{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  padding: .5em;
+  gap: .5em;
+}
+
+.interaction p{
+  font-size: 1.5em;
+  color: #FFF;
+  width: 2em;
+  height: 1.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+}
+
+.interaction p:hover{
+  background-color: rgba(204, 204, 204, .5);
+}
+
+.interaction .close:hover{
+  background-color: red;
+}
+
+/* input(contains value) style */
+
+.display{
+  background-color: #1e1e1e;
+  height: 7em;
+  width: 92.5%;
+  color: #FFF;
+  text-align: right;
+  border: none;
+  font-size: 3em;
+}
+
+.display:focus{
+  outline: 0;
+}
+
+/* buttons style */
+
+.first-column, .second-column, .third-column, .forth-column, .fifth-column{
+  display: flex;
+  gap: .1em;
+}
+
+.first-column div, .second-column div, .third-column div, .forth-column div, .fifth-column div{
+  width: 6em;
+  height: 4em;
+  color: #FFF;
+  margin-bottom: .1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+/* buttons hover styles */
+
+.number{
+  background-color: #070707;
+}
+
+.number:hover{
+  background-color: #131313;
+}
+
+.rest{
+  background-color: #131313;
+}
+
+.rest:hover{
+  background-color: #070707;
+}
+
+.btn-eq{
+  background-color: rgb(76, 194, 255);
+}
+
+.btn-eq:hover{
+  background-color: rgba(76,194,255, .7);
+  transition: all .2s;
+}
+
+/* logos social-media styles */
+
+.first-column .logo, .fifth-column .logo{
+  background-color: #131313;
+}
+
+ .logo div, .logo div{
+  width: 2em;
+  height: 2em;
+  animation: rotate 1s infinite linear;
+  background-color: #131313;
+}
+
+.logo:hover{
+  background-color: #070707;
+}
+
+.logo:hover img{
+  transform: scale(1.5);
+}
+
+/* icon calculator in "workspace" */
+
+.calculatorIcon{
+  width: 4em;
+  position: fixed;
+  bottom: 5em;
+  left: 5em;
+}
+
+.calculatorIcon:hover{
+  background-color: rgba(56, 169, 245, 0.5);
+}

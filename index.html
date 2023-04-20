@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/index.css" />
+  </head>
+  <body>
+    <section class="main">
+
+      <section class="interaction">
+        <p class="minimize">-</p>
+        <p class="close"><img src="/SVG/icons8-close.svg" alt="Icon Close" class="close"></p>
+      </section>
+
+      <input type="text" class="display"/>
+
+        <section class="first-column columns">
+          <div class="btn btn-clear rest">CE</div>
+          <div class="btn btn-clear rest">C</div>
+          <div class="logo">
+            <div>
+              <a href="https://www.linkedin.com/in/valdir-castro10/" target="_blank">
+                <img src="SVG/linkedin.svg" alt="Logo Linkedin" width="100%" height="100%">
+              </a>
+            </div>
+          </div>
+          <div class="btn btn-del rest">
+            <img src="/SVG/backspace.svg" alt="backspace image" width="20em" height="100%">
+          </div>
+        </section>
+
+        <section class="second-column columns">
+          <div class="btn btn-num number">7</div>
+          <div class="btn btn-num number">8</div>
+          <div class="btn btn-num number">9</div>
+          <div class="btn btn-num rest">x</div>
+        </section>
+        <section class="third-column columns">
+          <div class="btn btn-num number">4</div>
+          <div class="btn btn-num number">5</div>
+          <div class="btn btn-num number">6</div>
+          <div class="btn btn-num rest">-</div>
+        </section>
+        <section class="forth-column columns">
+          <div class="btn btn-num number">1</div>
+          <div class="btn btn-num number">2</div>
+          <div class="btn btn-num number">3</div>
+          <div class="btn btn-num rest">+</div>
+        </section>
+        <section class="fifth-column columns">
+          <div class="btn btn-num rest">/</div>
+          <div class="btn btn-num number">0</div>
+          <div class="logo">
+            <div>
+              <a href="https://github.com/valdircaf" target="_blank">
+                <img src="SVG/github.svg" alt="Logo Linkedin" width="100%" height="100%">
+              </a>
+            </div>
+          </div>
+          <div class="btn btn-eq">=</div>
+        </section>
+      </section>
+    </section>
+    <script src="/script.js"></script>
+    <div class="calculatorIcon">
+      <img src="Images/icons8-calculadora-64.png" alt="SVG Calculator" class="calculatorIcon">
+    </div>
+  </body>
+</html>
